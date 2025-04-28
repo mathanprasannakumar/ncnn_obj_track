@@ -368,8 +368,6 @@ static int detect_yolov8(const cv::Mat& bgr, std::vector<Object>& objects)
         if(proposals[picked[i]].label !=0)
             continue;
 
-        if(proposals[picked[i]].prob < 0.4)
-            continue;
         objects[i] = proposals[picked[i]];
 
         // adjust offset to original unpadded

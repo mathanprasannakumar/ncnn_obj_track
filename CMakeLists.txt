@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.30)
 project(ncnn_obj_track)
 
+SET(CMAKE_BUILD_TYPE "Debug")
 find_package(ncnn REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(Eigen3 REQUIRED)
